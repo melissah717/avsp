@@ -22,8 +22,8 @@ export const theme = createTheme({
   typography: {
     overline: {
       lineHeight: 1.73,
-      letterSpacing: '-0.05em',
-      fontSize: '1.5rem',
+      letterSpacing: '-1em',
+      fontSize: '2.5rem',
       fontWeight: 300,
     },
     h1: {
