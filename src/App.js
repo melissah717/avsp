@@ -5,9 +5,19 @@ import Clients from './components/Clients';
 import Contact from './components/Contact';
 import { Routes, Route } from 'react-router';
 import Nav from './components/Nav';
+import { ThemeProvider, createTheme } from '@mui/material/styles';
+
+const theme = createTheme({
+  typography: {
+    fontFamily: [
+      'Rubik', 'san-serif'
+    ].join(','),
+  },
+});
 
 function App() {
   return (
+    <ThemeProvider theme={theme}>
       <div className="App">
         <Nav />
         <Routes>
@@ -17,6 +27,7 @@ function App() {
           <Route path="/Contact" element={<Contact />} />
         </Routes>
     </div >
+    </ThemeProvider>
   );
 }
 
