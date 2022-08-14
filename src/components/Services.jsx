@@ -4,15 +4,15 @@ import Stuff from "./Stuff";
 
 export default function Services() {
   return (
-    <Grid container direction="column">
+    <Grid container>
       <Grid item>
       </Grid>
-      <Grid item container >
-        <Grid item xs={false} sm={2} />
-        <Grid item xs={12} sm={8}>
+      <Grid item container style={{display: 'flex'}}>
+        <Grid item xs={false} sm={0.5} />
+        <Grid item xs={12} sm={10}>
           <Stuff />
         </Grid>
-        <Grid item xs={false} sm={2} />
+        <Grid item xs={false} sm={0.5} />
       </Grid>
     </Grid>
   );

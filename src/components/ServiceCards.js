@@ -12,7 +12,17 @@ const ServiceCards = props => {
   const { title, description, imageUrl } = props;
   return (
     <Card
-    style={{marginTop: "20px", textAlign: "center", border: "2px solid black", padding: "5px"}} elevation={5}>
+    style=
+    {{
+      display: 'flex', 
+      flexDirection: 'column',
+      // justifyContent: 'space-between',
+      marginTop: "20px", 
+      textAlign: "center", 
+      border: "2px solid black", 
+      padding: "5px"
+    }} 
+      elevation={4}>
       <CardHeader
         title={title}
       />

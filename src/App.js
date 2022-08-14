@@ -6,6 +6,7 @@ import Contact from './components/Contact';
 import { Routes, Route } from 'react-router';
 import Nav from './components/Nav';
 import { ThemeProvider, createTheme } from '@mui/material/styles';
+import Footer from './components/Footer'
 
 const theme = createTheme({
   typography: {
@@ -26,6 +27,7 @@ function App() {
           <Route path="/Clients" element={<Clients />} />
           <Route path="/Contact" element={<Contact />} />
         </Routes>
+        <Footer />
     </div >
     </ThemeProvider>
   );

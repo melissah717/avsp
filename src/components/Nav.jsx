@@ -22,7 +22,7 @@ const Nav = () => {
   return (
     <AppBar 
     position="relative" 
-    elevation={3} 
+    elevation={2} 
     style={{ 
       backgroundColor: "white", 
       borderRadius: 10, 
