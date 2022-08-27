@@ -1,41 +1,27 @@
-import React from 'react';
-import PropTypes from 'prop-types';
-import { withStyles } from '@material-ui/core/styles';
-import Paper from '@material-ui/core/Paper';
-import Typography from '@material-ui/core/Typography';
+import React from "react";
+import {
+    AppBar,
+    Toolbar,
+    Typography,
+    Grid
+} from "@material-ui/core";
 
-const styles = theme => ({
-  root: {
-    ...theme.mixins.gutters(),
-    paddingTop: theme.spacing.unit * 2,
-    paddingBottom: theme.spacing.unit * 2,
-  },
-  footer: {
-    backgroundColor: theme.palette.background.paper,
-    marginTop: theme.spacing.unit * 8,
-    padding: `${theme.spacing.unit * 6}px 0`,
-  }
-});
+const Footer = () => <>
+        <Grid container justify="center" style={{minHeight: "212px"}}>
+            <Grid container item sm={6} xs={11} justify="space-between">
+                <Grid item sm={5} xs={12}>
+                </Grid>
+                <Grid item sm={5} xs={11}>
+                </Grid>
+            </Grid>
+        </Grid>
+        <AppBar position="static" elevation={0} component="footer" variant="fullWidth">
+            <Toolbar style={{ justifyContent: "space-between", display: 'block'}}>
+              <Typography>Email Us: info@avspllc.com</Typography>
+              <Typography>Phone Number: (510)445-4392</Typography>
+                <Typography variant="caption">©2022</Typography>
+            </Toolbar>
+        </AppBar>
+    </>
 
-function Footer(props) {
-  const { classes } = props;
-
-  return (
-    <footer classname="{classes.footer}">
-      <Paper classname="{classes.root}" elevation="{2}">
-        <Typography variant="h5" component="h3">
-          React App with Material UI
-        </Typography>
-        <Typography component="p">
-          @2018 All right reserved
-        </Typography>
-      </Paper>
-    </footer>
-  );
-}
-
-Footer.propTypes = {
-  classes: PropTypes.object.isRequired,
-};
-
-export default withStyles(styles)(Footer);
+export default Footer;

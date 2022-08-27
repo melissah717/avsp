@@ -8,11 +8,11 @@ export default function Services() {
       <Grid item>
       </Grid>
       <Grid item container style={{display: 'flex'}}>
-        <Grid item xs={false} sm={0.5} />
+        <Grid item xs={false} sm={1} />
         <Grid item xs={12} sm={10}>
           <Stuff />
         </Grid>
-        <Grid item xs={false} sm={0.5} />
+        <Grid item xs={false} sm={1} />
       </Grid>
     </Grid>
   );

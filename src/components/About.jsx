@@ -12,7 +12,7 @@ const sectionStyle = {
         height: '60vh',
         backgroundPosition: 'cover',
         backgroundSize: 'cover',
-        opacity: 0.7,
+        opacity: 0.8,
         display: 'flex',
         alignItems: 'center',
         justifyContent: 'center',
@@ -30,7 +30,7 @@ export default function About() {
                 <Paper sx={{
                     width: '60%',
                     height: '40%',
-                    backgroundColor: 'white',
+                    backgroundColor: 'black',
                     margin: '0 auto',
                     // opacity: 0.9,
                     justifyContent: 'center',
@@ -40,14 +40,13 @@ export default function About() {
                 }}>
                     <Typography sx={{
                         textAlign: 'center',
-                        color: 'black'
+                        color: 'white'
                         
                     }}>
-                        AVSP provides world class, scalable audio visual solutions for a variety of needs. Need help with anything? We got you.
-                        AVSP provides world class, scalable audio visual solutions for a variety of needs. Need help with anything? We got you.
-                        AVSP provides world class, scalable audio visual solutions for a variety of needs. Need help with anything? We got you.
-                        AVSP provides world class, scalable audio visual solutions for a variety of needs. Need help with anything? We got you.
-
+                        AVSP provides world class, scalable audio visual solutions for a variety of needs. We are located in the San Francisco Bay Area, 
+                        at the heart of the Silicon Valley. We find ways to ingtegrate simple, elegant, and scalable designs, as well as efficient audio visual
+                        needs to clients all across the country. From conferences to wedding powerpoints, let AVSP's expertise bring your meeting or event
+                        to the next level. 
                     </Typography>
                 </Paper>
             </Container>

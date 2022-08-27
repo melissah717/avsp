@@ -18,11 +18,11 @@ const ServiceCards = props => {
       flexDirection: 'column',
       // justifyContent: 'space-between',
       marginTop: "20px", 
-      textAlign: "center", 
+      textAlign: "left", 
       border: "2px solid black", 
       padding: "5px"
     }} 
-      elevation={4}>
+      elevation={3}>
       <CardHeader
         title={title}
       />
@@ -32,8 +32,8 @@ const ServiceCards = props => {
           {description}
         </Typography>
       </CardContent>
-      <CardActions style={{justifyContent: 'center'}}>
-        <Button variant="outlined" disableElevation color="primary">Learn More</Button>
+      <CardActions style={{justifyContent: 'left'}}>
+        <Button variant="contained" disableElevation>Learn More</Button>
       </CardActions>
     </Card>
   );

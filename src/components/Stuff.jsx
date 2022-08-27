@@ -6,7 +6,7 @@ import ServiceCards from "./ServiceCards"
 const Stuff = () => {
   const getServices = serviceList => {
     return (
-      <Grid item xs={12} sm={5}>
+      <Grid item xs={12} sm={4}>
         <ServiceCards {...serviceList} />
       </Grid>
     );
@@ -16,6 +16,7 @@ const Stuff = () => {
     <Grid container spacing={6}>
       {serviceList.map(serviceList => getServices(serviceList))}
     </Grid>
+
   );
 };
 
