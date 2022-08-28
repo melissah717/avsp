@@ -6,12 +6,18 @@ import Typography from "@material-ui/core/Typography";
 import InfoIcon from '@mui/icons-material/Info';
 import DesignServicesIcon from '@mui/icons-material/DesignServices';
 import PeopleIcon from '@mui/icons-material/People';
+import { ThemeProvider, createTheme } from '@mui/material/styles';
+
+const theme = createTheme({
+  typography: {
+    fontFamily: [
+      'Josefin Sans', 'san-serif'
+    ].join(','),
+  },
+});
 
 
-
-// const tabs = ['About', 'Services', 'Clients', 'Contact'];
-
-const Nav = () => {
+export default function Nav() {
 
     const [tab, setTab] = useState(0);
 
@@ -19,7 +25,9 @@ const Nav = () => {
         setTab(value);
         return;
     }
+
   return (
+    <ThemeProvider theme={theme}>
     <AppBar 
     position="relative" 
     elevation={2} 
@@ -29,6 +37,7 @@ const Nav = () => {
       marginBottom: '10px',
       opacity: '0.8'
       }}>
+
         <Typography 
         variant='h3' 
         style={{
@@ -38,6 +47,8 @@ const Nav = () => {
           }}>
             <span style={{color: "skyblue"}}>A</span>udio <span style={{color: "skyblue"}}>V</span>isual Service Providers
         </Typography>
+
+
         <Tabs 
           variant="fullWidth"
           value={tab}
@@ -45,15 +56,16 @@ const Nav = () => {
           textColor="white"
           indicatorColor='white'
           centered
-          style={{minWidth: '80%'}}
+          style={{width: '100%'}}
         >
-          <div className="tabs" style={{color:"skyblue", borderTop: '1px solid black', marginTop: '4px'}}>
-        <Tab label="About" component={ Link } to={'/About'} icon={<InfoIcon/>}/>
+          <div className="tabs" style={{color:"white", borderTop: '1px solid white', marginTop: '4px'}}>
+        <Tab label="About" component={ Link } to={'/About'} icon={<InfoIcon/>} centered/>
         <Tab label="Services" component={ Link } to={'/Services'} icon={<DesignServicesIcon/>}/>
         <Tab label="Clients" component={ Link } to={'/Clients'} icon={<PeopleIcon/>}/>
         </div>
             </Tabs>
     </AppBar>
+    </ThemeProvider>
   );
 };
-export default Nav;
+

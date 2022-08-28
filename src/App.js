@@ -18,7 +18,7 @@ const theme = createTheme({
 function App() {
   return (
     <ThemeProvider theme={theme}>
-      <div className="App" style={{backgroundColor: 'grey', opacity: 0.9}}>
+      <div className="App">
         <Nav />
         <Routes>
           <Route path="/About" element={<About />} />
