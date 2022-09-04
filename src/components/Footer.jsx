@@ -6,25 +6,24 @@ import {
 
 
 const style = {
-    backgroundColor: "#F8F8F8",
-    borderTop: "3px solid #E7E7E7",
-    textAlign: "left",
-    padding: "5px",
+    backgroundColor: "black",
+    borderRadius: 5,
+    textAlign: "center",
     position: "fixed",
-    left: "0",
     bottom: "0",
-    height: "100px",
+    height: "14vh",
     width: "100%", 
-    color: 'black'
+    color: 'white',
+    // opacity: 0.95,
+    padding: '1em'
   };
 
-const Footer = () => <>
-        <AppBar position= "static" elevation={0} component="footer" variant="fullWidth" style={style}>
-            {/* <Toolbar style={{ justifyContent: "space-between", display: 'block', fontSize: '20px'}}> */}
-              <Typography variant="h5">Email Us: info@avspllc.com</Typography>
-              <Typography variant="h6">Phone Number: (510)445-4392</Typography>
-            {/* </Toolbar> */}
+function Footer(){
+  return(
+        <AppBar position= "static" component="footer" style={style}>
+              <p className='footer'>Email Us: <a className="email-link" href="mailto: info@avspllc.com">info@avspllc.com </a><br />
+              Phone Number: (510)445-4392</p>
         </AppBar>
-    </>
-
+  )
+}
 export default Footer;

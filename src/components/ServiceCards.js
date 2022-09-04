@@ -20,20 +20,22 @@ const ServiceCards = props => {
       marginTop: "20px", 
       textAlign: "left", 
       border: "2px solid black", 
-      padding: "5px"
+      padding: "5px",
+      height: "500px",
     }} 
       elevation={3}>
       <CardHeader
         title={title}
+        style={{textAlign: 'center', fontFamily: 'Josefin Sans, sans-serif'}}
       />
-      <CardMedia style={{ height: "45vh"}} image={imageUrl} />
+      <CardMedia style={{ minHeight: "250px"}} image={imageUrl} />
       <CardContent >
-        <Typography variant="body2" component="p">
+        <p className="card-body">
           {description}
-        </Typography>
+        </p>
       </CardContent>
-      <CardActions style={{justifyContent: 'left'}}>
-        <Button variant="contained" disableElevation>Learn More</Button>
+      <CardActions style={{justifyContent: 'center', position: 'static'}}>
+        <Button variant="outlined" disableElevation>Learn More</Button>
       </CardActions>
     </Card>
   );

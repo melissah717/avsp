@@ -1,9 +1,23 @@
 import React from "react";
-import { Grid } from "@material-ui/core";
+import { Grid, Box } from "@material-ui/core";
 import Stuff from "./Stuff";
+import backgroundImage from "../images/background.jpeg";
 
 export default function Services() {
   return (
+    <Box
+    class='backgroundImage'
+    style={{
+      backgroundImage: `url(${backgroundImage})`,
+      height: '100vh',
+      alignItems: 'center',
+      justifyContent: 'center',
+      display: 'flex', 
+      position: 'fixed',
+      backgroundSize: 'cover', 
+      opacity: 0.8
+
+    }}>
     <Grid container>
       <Grid item>
       </Grid>
@@ -15,5 +29,6 @@ export default function Services() {
         <Grid item xs={false} sm={1} />
       </Grid>
     </Grid>
+    </Box>
   );
 };

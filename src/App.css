@@ -1,3 +1,36 @@
 html, body {
-    background-color: #000000
+    background-color: #e0e0e0;
+    border: 0
+}
+h1{
+    font-family: 'Josefin Sans', sans-serif;
+    font-size: 4em;
+    text-align: center;
+    border-bottom: 1px solid white;
+    margin: 0 auto;
+    padding: 10px
+
+}
+
+p{
+    font-family: 'Josefin Sans', sans-serif;
+    font-size: 1.5em;
+    text-align: center;
+    justify-self: auto
+}
+
+.footer {
+    border-bottom: 1px solid white;
+    padding: 10px;
+    margin: 0 auto;
+}
+
+a:link, a:visited,  a:active
+{
+    color: white;
+    text-decoration: none;
+}
+
+a:hover {
+    color: rgb(163, 163, 245)
 }
