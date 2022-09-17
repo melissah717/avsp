@@ -29,12 +29,12 @@ export default function Nav() {
   return (
 <>
       <AppBar
-        position="fixed"
+        position="static"
         elevation={2}
         style={{
           backgroundColor: "black",
           // borderRadius: 5,
-          // marginBottom: '10px',
+          marginBottom: '10px',
           // opacity: '0.9'
         }}>
       <h1 className="header">

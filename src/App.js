@@ -7,12 +7,23 @@ import Nav from './components/Nav';
 import { ThemeProvider, createTheme } from '@mui/material/styles';
 import Footer from './components/Footer'
 import '../src/App.css'
+import background from './images/background.jpeg'
 
 const theme = createTheme({
   typography: {
     fontFamily: [
       'Josefin Sans', 'san-serif'
     ].join(','),
+  },
+  overrides: {
+    MuiCssBaseline: {
+      '@global': {
+        body: {
+          border: '2px solid blue',
+          backgroundImage: `url(${background})`,
+        },
+      },
+    },
   },
 });
 

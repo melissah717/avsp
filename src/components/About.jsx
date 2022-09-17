@@ -13,6 +13,7 @@ const sectionStyle = {
         width: '100%',
         backgroundPosition: 'cover',
         backgroundSize: 'cover',
+        position: 'static',
         // opacity: 0.9,
         display: 'flex',
         alignItems: 'center',
@@ -37,7 +38,7 @@ export default function About() {
                     // justifyContent: 'center',
                     alignItems: 'center',
                     display: 'flex',
-                    position: 'fixed',
+                    position: 'static',
                     borderRadius: 4
 
                 }}>
