@@ -1,13 +1,11 @@
 import React from "react";
 import {
     AppBar,
-    Typography,
 } from "@material-ui/core";
 
 
 const style = {
     backgroundColor: "black",
-    borderRadius: 5,
     textAlign: "center",
     bottom: 0,
     right: 0,
