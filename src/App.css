@@ -22,8 +22,9 @@ p{
 }
 
 .footer {
-    padding: 10px;
+    display: inline;
     margin: 0 auto;
+    font-size: 2em;
 }
 
 a:link, a:visited,  a:active

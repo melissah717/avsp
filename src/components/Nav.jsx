@@ -34,7 +34,7 @@ export default function Nav() {
         style={{
           backgroundColor: "black",
           // borderRadius: 5,
-          marginBottom: '10px',
+          marginBottom: '5px',
           // opacity: '0.9'
         }}>
       <h1 className="header">

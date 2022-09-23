@@ -19,7 +19,6 @@ const theme = createTheme({
     MuiCssBaseline: {
       '@global': {
         body: {
-          border: '2px solid blue',
           backgroundImage: `url(${background})`,
         },
       },

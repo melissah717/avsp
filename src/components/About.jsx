@@ -7,7 +7,7 @@ import Background from "../images/background.jpeg"
 
 const sectionStyle = {
     container: {
-        content: ' "" ',
+        minHeight: '100vh',
         backgroundImage: `url(${Background})`,
         height: '100vh',
         width: '100%',
