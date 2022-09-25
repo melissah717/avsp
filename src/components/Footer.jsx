@@ -15,7 +15,8 @@ const style = {
     color: 'white',
     // opacity: 0.95,
     padding: '1em',
-    position: 'static'
+    position: 'static',
+    marginTop: '1px'
   };
 
 function Footer(){

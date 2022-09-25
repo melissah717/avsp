@@ -32,9 +32,10 @@ export default function Nav() {
         position="static"
         elevation={2}
         style={{
+          padding: 5,
           backgroundColor: "black",
           // borderRadius: 5,
-          marginBottom: '5px',
+          marginBottom: '1px',
           // opacity: '0.9'
         }}>
       <h1 className="header">

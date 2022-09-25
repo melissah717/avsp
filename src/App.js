@@ -15,21 +15,12 @@ const theme = createTheme({
       'Josefin Sans', 'san-serif'
     ].join(','),
   },
-  overrides: {
-    MuiCssBaseline: {
-      '@global': {
-        body: {
-          backgroundImage: `url(${background})`,
-        },
-      },
-    },
-  },
 });
 
 function App() {
   return (
     <ThemeProvider theme={theme}>
-      <div className="App">
+      <div className="App" style={{position: 'static'}}>
         <Nav />
         <Routes>
           <Route path="/" element={<About />} />

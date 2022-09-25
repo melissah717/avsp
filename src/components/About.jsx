@@ -7,18 +7,15 @@ import Background from "../images/background.jpeg"
 
 const sectionStyle = {
     container: {
-        minHeight: '100vh',
+        minHeight: '70vh',
         backgroundImage: `url(${Background})`,
-        height: '100vh',
-        width: '100%',
+        width: '99vw',
         backgroundPosition: 'cover',
         backgroundSize: 'cover',
-        position: 'static',
-        // opacity: 0.9,
+        backgroundPosition: 'center',
         display: 'flex',
         alignItems: 'center',
         justifyContent: 'center',
-        // border: '2px solid black'
     }
 }
 export default function About() {
@@ -30,25 +27,22 @@ export default function About() {
                 maxWidth={false}
             >
                 <Paper sx={{
-                    width: '50vw',
-                    height: '50vh',
+                    width: '40vw',
+                    height: '40vh',
                     backgroundColor: 'black',
                     margin: '0 auto',
-                    // opacity: 0.9,
-                    // justifyContent: 'center',
                     alignItems: 'center',
                     display: 'flex',
                     position: 'static',
-                    borderRadius: 4
+                    borderRadius: 5, 
+                    border: '2px solid white'
 
                 }}>
                     <Typography sx={{
                         textAlign: 'center',
                         fontSize: '2vh',
                         padding: '1em',
-                        color: 'white',
-                        borderTop: '1px solid white',
-                        borderBottom: '1px solid white'
+                        color: 'white'
                         
                     }}>
                         AVSP provides world class, scalable audio visual solutions for a variety of needs. We are located in the San Francisco Bay Area, 

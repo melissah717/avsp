@@ -8,26 +8,27 @@ import Card from '@material-ui/core/Card';
 import CardContent from '@material-ui/core/CardContent';
 import CardMedia from '@material-ui/core/CardMedia';
 import Hidden from '@material-ui/core/Hidden';
-import Background from "../images/background.jpeg"
 import Installation from '../images/installation.jpeg'
 import Service from '../images/servicePic.jpeg'
 
 
 const styles = theme => ({
   layout: {
+    backgroundColor: '#e0e0e0',
     width: 'auto',
     minHeight: '90vh',
     paddingTop: 50,
     marginLeft: theme.spacing.unit * 2,
     marginRight: theme.spacing.unit * 2,
     [theme.breakpoints.up(1100 + theme.spacing.unit * 3 * 2)]: {
-      width: 1500,
+      width: '1700',
       marginLeft: 'auto',
       marginRight: 'auto',
     },
   },
   mainFeaturedPost: {
     backgroundColor: "black",
+    border: '2px solid white',
     color: theme.palette.common.white,
     marginBottom: theme.spacing.unit * 6,
   },
@@ -44,18 +45,15 @@ const styles = theme => ({
     display: 'flex',
     backgroundColor: 'black',
     color: theme.palette.common.white,
-    margin: 5,
+    margin: 2,
     height: '20rem',
-    border: '5px solid black'
+    border: '2px solid white'
   },
   cardDetails: {
     flex: 1,
   },
   cardMedia: {
-    width: 200,
-  },
-  markdown: {
-    padding: `${theme.spacing.unit * 3}px 0`,
+    width: 350,
   },
 });
 
@@ -64,14 +62,14 @@ const featuredPosts = [
   {
     title: 'Service and Support',
     description:
-      ' Experienced service andaround the clock technical support. Experienced service andaround the clock technical support. Experienced service andaround the clock technical support. Experienced service andaround the clock technical support. Experienced service andaround the clock technical support.Experienced service andaround the clock technical support.',
+      'Anything can happen. While we pride ourselves on our work, we are also on hand to solve any problems that may arise in the present and in the future. The systems we ',
     image:
       Service
   },
   {
     title: 'Installation and Integration',
     description:
-      'Experienced installation of both software and hardware for various needs. Experienced installation of both software and hardware for various needs. Experienced installation of both software and hardware for various needs. Experienced installation of both software and hardware for various needs.Experienced installation of both software and hardware for various needs.Experienced installation of both software and hardware for various needs.',
+      'We use ',
     image: Installation
   },
 ];
@@ -92,13 +90,8 @@ function Services(props) {
                 Design and Engineering
               </Typography>
               <Typography variant="p" color="inherit" paragraph style={{justifyContent: 'center', overflow: 'none'}}>
-                ASVP has experience designing audio visual ecosystems for clients with various needs.
-                We use the latest design conventions to make your event unique and memorable.
-                We use the latest design conventions to make your event unique and memorable.
-                We use the latest design conventions to make your event unique and memorable.
-                We use the latest design conventions to make your event unique and memorable.
-                We use the latest design conventions to make your event unique and memorable.
-                We use the latest design conventions to make your event unique and memorable.
+                We work with you to transform meeting spaces into engaging and unique environments. We collaborate with your support staff to develop
+                and implement a scalable project that is both simple and elegant. 
               </Typography>
             </div>
           </Grid>
@@ -106,11 +99,11 @@ function Services(props) {
             <div className='serviceImage' >
               <img 
               alt="main"
-              src="https://i.imgur.com/OZhRynF.jpeg" 
+              src="https://i.imgur.com/65523GZ.png"
               style={{ 
                 width: '700px', 
                 paddingTop: 4, 
-                paddingLeft: 45
+                paddingLeft: '14em'
                 }}>
                 </img>
             </div>
@@ -125,16 +118,12 @@ function Services(props) {
             <Card className={classes.card}>
               <div className={classes.cardDetails}>
                 <CardContent>
-                  <Typography component="p" variant="h4">
+                  <Typography component="p" variant="h3">
                     {post.title}
                   </Typography>
-                  <Typography variant="p" paragraph style={{display: 'flex', alignItems: 'center', justifyContent: 'center'}}>
+                  <Typography variant="p" paragraph style={{display: 'flex', textAlign: 'left', justifyContent: 'center'}}>
                     {post.description}
                   </Typography>
-                  {/* <CardMedia
-                    className={post.image}
-                    image={post.image}
-                    title="pictures" /> */}
                 </CardContent>
               </div>
               <Hidden xsDown>

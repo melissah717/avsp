@@ -9,7 +9,7 @@ import clientData from '../components/clientData'
 export default function Clients() {
     return (
         <>
-            <Typography variant="h3" textAlign="center" sx={{}}>
+            <Typography variant="h3" textAlign="center" sx={{paddingTop: '1rem'}}>
                 AVSP has been proud to work with some of these amazing companies in the past:
             </Typography>
             <ImageList variant="masonry" cols={4} gap={20}>
