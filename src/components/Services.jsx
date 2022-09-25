@@ -21,7 +21,7 @@ const styles = theme => ({
     marginLeft: theme.spacing.unit * 2,
     marginRight: theme.spacing.unit * 2,
     [theme.breakpoints.up(1100 + theme.spacing.unit * 3 * 2)]: {
-      width: '1700',
+      width: '95%',
       marginLeft: 'auto',
       marginRight: 'auto',
     },
@@ -30,17 +30,25 @@ const styles = theme => ({
     backgroundColor: "black",
     border: '2px solid white',
     color: theme.palette.common.white,
-    marginBottom: theme.spacing.unit * 6,
+    marginBottom: theme.spacing.unit * 12
   },
   mainFeaturedPostContent: {
-    padding: `${theme.spacing.unit * 6}px`,
+    padding: `${theme.spacing.unit * 20}px`,
     [theme.breakpoints.up('md')]: {
       paddingRight: 0,
     },
+    border: '1px solid pink'
   },
   mainGrid: {
     marginTop: theme.spacing.unit * 6,
   },
+  // cardContent: {
+  //   display: 'flex',
+  //   padding: `${theme.spacing.unit * 4}px`,
+  //   [theme.breakpoints.up('md')]: {
+  //     paddingRight: 0,
+  //   },
+  // },
   card: {
     display: 'flex',
     backgroundColor: 'black',
@@ -62,14 +70,14 @@ const featuredPosts = [
   {
     title: 'Service and Support',
     description:
-      'Anything can happen. While we pride ourselves on our work, we are also on hand to solve any problems that may arise in the present and in the future. The systems we ',
+      'Technical failures can happen to even the most experienced users of technology. We strive to make your meeting spaces always available, while decreasing lost time due to technical issues. We offer aroundt the clock support to ensure our work stays running as it should. ',
     image:
       Service
   },
   {
     title: 'Installation and Integration',
     description:
-      'We use ',
+      'Audio Visual installation is more complext than plugging things in. We build entire ecosystems that add depth and value to your organization\'s day to day needs. We hold our work to the highest standards. ',
     image: Installation
   },
 ];
@@ -78,20 +86,24 @@ const featuredPosts = [
 
 function Services(props) {
   const { classes } = props;
+  const [checked, setChecked] = React.useState(false);
 
+  const handleChange = () => {
+    setChecked((prev) => !prev);
+  };
   return (
     <div className={classes.layout}>
       {/* Main featured post */}
       <Paper className={classes.mainFeaturedPost}>
         <Grid container>
           <Grid item md={6}>
-            <div className={classes.mainFeaturedPostContent}>
-              <Typography component="p" variant="h3" color="inherit" gutterBottom>
+            <div className={classes.mainFeaturedPostContent} style={{width: '35em', textAlign: 'left'}}>
+              <Typography component="p" variant="h3" color="inherit" gutterBottom sx={{border: '20px double pink'}}>
                 Design and Engineering
               </Typography>
-              <Typography variant="p" color="inherit" paragraph style={{justifyContent: 'center', overflow: 'none'}}>
-                We work with you to transform meeting spaces into engaging and unique environments. We collaborate with your support staff to develop
-                and implement a scalable project that is both simple and elegant. 
+              <Typography variant="p" color="inherit" paragraph gutterBottom sx={{textAlign: 'left', border: '1px solid white'}}>
+                We focus on creative solutions to craft your conference rooms and meeting spaces by putting the needs and budget of our clients first. 
+                After figuring out the intial plan, we collaborate with you ensure your audio and visual solutions are a success. 
               </Typography>
             </div>
           </Grid>
@@ -101,9 +113,10 @@ function Services(props) {
               alt="main"
               src="https://i.imgur.com/65523GZ.png"
               style={{ 
-                width: '700px', 
-                paddingTop: 4, 
-                paddingLeft: '14em'
+                width: '100%', 
+                paddingTop: '30px',
+                paddingLeft: '30px',
+                border: '1px solid white'
                 }}>
                 </img>
             </div>

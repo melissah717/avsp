@@ -9,7 +9,7 @@ const sectionStyle = {
     container: {
         minHeight: '70vh',
         backgroundImage: `url(${Background})`,
-        width: '99vw',
+        width: '100vw',
         backgroundPosition: 'cover',
         backgroundSize: 'cover',
         backgroundPosition: 'center',
@@ -42,9 +42,10 @@ export default function About() {
                         textAlign: 'center',
                         fontSize: '2vh',
                         padding: '1em',
-                        color: 'white'
-                        
-                    }}>
+                        color: 'white'   
+                    }}
+                    variant='p'
+                    component="p">
                         AVSP provides world class, scalable audio visual solutions for a variety of needs. We are located in the San Francisco Bay Area, 
                         at the heart of the Silicon Valley. We find ways to ingtegrate simple, elegant, and scalable designs, as well as efficient audio visual
                         needs to clients all across the country. From conferences to wedding powerpoints, let AVSP's expertise bring your meeting or event
