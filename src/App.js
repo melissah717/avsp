@@ -12,7 +12,7 @@ import background from './images/background.jpeg'
 const theme = createTheme({
   typography: {
     fontFamily: [
-      'Josefin Sans', 'san-serif'
+      'Poppins', 'san-serif'
     ].join(','),
   },
 });

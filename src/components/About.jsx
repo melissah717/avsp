@@ -35,12 +35,12 @@ export default function About() {
                     display: 'flex',
                     position: 'static',
                     borderRadius: 5, 
-                    border: '2px solid white'
+
 
                 }}>
                     <Typography sx={{
                         textAlign: 'center',
-                        fontSize: '2vh',
+                        fontSize: '1rem',
                         padding: '1em',
                         color: 'white'   
                     }}

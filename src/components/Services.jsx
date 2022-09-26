@@ -28,16 +28,14 @@ const styles = theme => ({
   },
   mainFeaturedPost: {
     backgroundColor: "black",
-    border: '2px solid white',
     color: theme.palette.common.white,
-    marginBottom: theme.spacing.unit * 12
+    marginBottom: theme.spacing.unit * 2
   },
   mainFeaturedPostContent: {
     padding: `${theme.spacing.unit * 20}px`,
     [theme.breakpoints.up('md')]: {
       paddingRight: 0,
     },
-    border: '1px solid pink'
   },
   mainGrid: {
     marginTop: theme.spacing.unit * 6,
@@ -53,15 +51,16 @@ const styles = theme => ({
     display: 'flex',
     backgroundColor: 'black',
     color: theme.palette.common.white,
-    margin: 2,
+    margin: 0.4,
     height: '20rem',
-    border: '2px solid white'
   },
   cardDetails: {
     flex: 1,
+    maxWidth: "400px"
   },
   cardMedia: {
-    width: 350,
+    width: 300,
+    margin: '20px'
   },
 });
 
@@ -70,14 +69,14 @@ const featuredPosts = [
   {
     title: 'Service and Support',
     description:
-      'Technical failures can happen to even the most experienced users of technology. We strive to make your meeting spaces always available, while decreasing lost time due to technical issues. We offer aroundt the clock support to ensure our work stays running as it should. ',
+      'Technical failures can happen to even the most experienced users of technology. We strive to make your meeting spaces always available, while decreasing lost time due to technical issues. We offer aroundt the clock support to ensure our work, and your event, stays running as it should. ',
     image:
       Service
   },
   {
     title: 'Installation and Integration',
     description:
-      'Audio Visual installation is more complext than plugging things in. We build entire ecosystems that add depth and value to your organization\'s day to day needs. We hold our work to the highest standards. ',
+      'Audio Visual installation is more complex than connecting some wires. We build entire ecosystems that add depth and value to your organization\'s day to day needs. We hold our work to the highest standards - we blend innovative technology and ingenuity to create masterpieces of installation.',
     image: Installation
   },
 ];
@@ -86,11 +85,6 @@ const featuredPosts = [
 
 function Services(props) {
   const { classes } = props;
-  const [checked, setChecked] = React.useState(false);
-
-  const handleChange = () => {
-    setChecked((prev) => !prev);
-  };
   return (
     <div className={classes.layout}>
       {/* Main featured post */}
@@ -98,26 +92,20 @@ function Services(props) {
         <Grid container>
           <Grid item md={6}>
             <div className={classes.mainFeaturedPostContent} style={{width: '35em', textAlign: 'left'}}>
-              <Typography component="p" variant="h3" color="inherit" gutterBottom sx={{border: '20px double pink'}}>
+              <Typography component="p" variant="h3" color="inherit" gutterBottom>
                 Design and Engineering
               </Typography>
-              <Typography variant="p" color="inherit" paragraph gutterBottom sx={{textAlign: 'left', border: '1px solid white'}}>
+              <Typography variant="p" color="inherit" paragraph>
                 We focus on creative solutions to craft your conference rooms and meeting spaces by putting the needs and budget of our clients first. 
                 After figuring out the intial plan, we collaborate with you ensure your audio and visual solutions are a success. 
               </Typography>
             </div>
           </Grid>
           <Grid item md={6}>
-            <div className='serviceImage' >
+            <div className='serviceImage'>
               <img 
               alt="main"
-              src="https://i.imgur.com/65523GZ.png"
-              style={{ 
-                width: '100%', 
-                paddingTop: '30px',
-                paddingLeft: '30px',
-                border: '1px solid white'
-                }}>
+              src="https://i.imgur.com/65523GZ.png">
                 </img>
             </div>
           </Grid>
@@ -131,12 +119,12 @@ function Services(props) {
             <Card className={classes.card}>
               <div className={classes.cardDetails}>
                 <CardContent>
-                  <Typography component="p" variant="h3">
+                  <h3>
                     {post.title}
-                  </Typography>
-                  <Typography variant="p" paragraph style={{display: 'flex', textAlign: 'left', justifyContent: 'center'}}>
+                  </h3>
+                  <p>
                     {post.description}
-                  </Typography>
+                  </p>
                 </CardContent>
               </div>
               <Hidden xsDown>

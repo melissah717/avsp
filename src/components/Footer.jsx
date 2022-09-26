@@ -16,7 +16,6 @@ const style = {
     // opacity: 0.95,
     padding: '1em',
     position: 'static',
-    marginTop: '1px'
   };
 
 function Footer(){

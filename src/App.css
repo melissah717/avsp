@@ -3,18 +3,28 @@ html, body {
     margin: 0
 }
 h1{
-    font-family: 'Josefin Sans', sans-serif;
-    font-size: 4em;
+    font-family: 'Poppins', sans-serif;
+    font-size: 4rem;
     text-align: center;
-    border-bottom: 1px solid white;
+    border-bottom: 6px solid rgb(243, 84, 84);
     margin: 0 auto;
-    padding: 10px
+
 
 }
-
+h2{
+    font-family: 'Poppins', sans-serif;
+}
+h3{
+    font-family: 'Poppins', sans-serif;
+    font-size: 1.5rem;
+    text-align: center;
+}
+h4{
+    font-family: 'Poppins', sans-serif;
+}
 p{
     font-family: 'Poppins', sans-serif;
-    font-size: 1.5em;
+    font-size: 1rem;
     text-align: center;
     justify-self: auto
 }
@@ -33,4 +43,10 @@ a:link, a:visited,  a:active
 
 a:hover {
     color: rgb(163, 163, 245)
+}
+
+.serviceImage{
+    width: 70%;
+    margin-top: 30px;
+    padding-left: 40px
 }
