@@ -33,7 +33,7 @@ export default function Services(){
     <Grid container spacing={1}>
       <Grid item xs={12} sm={6}>
         <Card style={cardStyle}>
-          <h2 style={headerStyle}>Design <span className="deco">//</span> Engineering</h2>
+          <h2 style={headerStyle}>Designing <span className="deco">//</span> Engineering</h2>
           <p className="service-paragraph">
             We focus on creative solutions to craft your conference rooms and meeting spaces by putting the needs and budget of our clients first. 
             After figuring out the intial plan, we collaborate with you ensure your audio and visual solutions are a success. 
