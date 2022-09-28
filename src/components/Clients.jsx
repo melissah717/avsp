@@ -11,9 +11,9 @@ export default function Clients() {
             <h3>
                 We have been proud to work with some of these amazing companies in the past:
             </h3>
-            <ImageList variant="masonry" cols={3} gap={50}>
+            <ImageList variant="masonry" cols={3} gap={30}>
                 {clientData.map((item) => (
-                    <ImageListItem key={item.img} style={{ padding: '2rem', maxWidth: "100%"}}>
+                    <ImageListItem key={item.img} style={{ padding: '1.5rem', width: "auto"}}>
                         <img
                             src={`${item.img}?w=248&fit=crop&auto=format`}
                             srcSet={`${item.img}?w=248&fit=crop&auto=format&dpr=2 2x`}
