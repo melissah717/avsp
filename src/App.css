@@ -34,13 +34,16 @@ p{
 
 @media only screen and (max-width: 600px) {
     p{
-        font-size: 1.25vh
+        font-size: 1.2vh
     }
     p.footer{
         font-size: 1.5vh
     }
+    p.service-paragraph{
+        font-size: 12px;
+    }
     h1{
-        font-size: 25px;
+        font-size: 20px;
     }
 }
 
@@ -63,15 +66,22 @@ a:link, a:visited,  a:active
 }
 
 a:hover {
-    color: rgb(163, 163, 245)
+    color: rgb(255, 241, 176)
 }
 
 .serviceImage{
     width: 100%;
-    height: auto;
+    height: 6vh;
     padding-top: 15vh
 }
 
 span{
     color: rgb(243, 84, 84);
+}
+
+p.service-paragraph{
+    padding: 1.2rem;
+    font-size: 1.45vh;
+    width: 60%;
+    margin: auto;
 }

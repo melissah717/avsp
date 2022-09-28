@@ -17,15 +17,9 @@ const pictureStyle = {
 const headerStyle={
   textAlign: 'center',
   marginTop: '6vh',
-  fontSize: '4vh',
+  fontSize: '3.75vh'
 }
 
-const paragraphStyle = {
-  padding: '1.5rem',
-  fontSize: '1.7vh',
-  width: "60%",
-  margin: 'auto'
-}
 
 
 export default function Services(){
@@ -37,8 +31,8 @@ export default function Services(){
     <Grid container spacing={1}>
       <Grid item xs={12} sm={6}>
         <Card style={cardStyle}>
-          <h2 style={headerStyle}>Design <span className="deco">//</span> Engineering</h2>
-          <p style={paragraphStyle} className="service-paragraph">
+          <h2 style={headerStyle}>Design <span className="deco">//</span><br/> Engineering</h2>
+          <p className="service-paragraph">
             We focus on creative solutions to craft your conference rooms and meeting spaces by putting the needs and budget of our clients first. 
             After figuring out the intial plan, we collaborate with you ensure your audio and visual solutions are a success. 
           </p>
@@ -59,8 +53,8 @@ export default function Services(){
 
       <Grid item xs={12} sm = {6} order={{xs: 3, sm: 4, md: 4}}>
         <Card style={cardStyle}>
-          <h2 style={headerStyle}>Service <span className="deco">//</span> Support</h2>
-          <p style={paragraphStyle} className="service-paragraph">
+          <h2 style={headerStyle}>Service <span className="deco">//</span><br/> Support</h2>
+          <p className="service-paragraph">
           Technical failures can happen to even the most experienced users of technology. We strive to make your meeting spaces always available, while decreasing lost time due to technical issues. We offer aroundt the clock support to ensure our work, and your event, stays running as it should.
           </p>
         </Card>
@@ -69,7 +63,7 @@ export default function Services(){
       <Grid item xs={12} sm={6} order={{xs: 5}}>
         <Card style={cardStyle}>
           <h2 style={headerStyle}>Installation <span className="deco">//</span> Integration</h2>
-          <p style={paragraphStyle} className="service-paragraph">
+          <p className="service-paragraph">
           Audio Visual installation is more complex than connecting some wires. We build entire ecosystems that add depth and value to your organization's day to day needs. We hold our work to the highest standards - we blend innovative technology and ingenuity to create masterpieces of installation.
           </p>
         </Card>
