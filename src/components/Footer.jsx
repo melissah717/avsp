@@ -7,19 +7,18 @@ import {
 const style = {
     backgroundColor: "black",
     textAlign: "center",
-    bottom: 0,
-    right: 0,
-    left: 0,
+    marginBottom: "0",
     height: "10vh",
     width: "100%", 
     color: 'white',
     position: 'static',
+    marginTop: 'auto'
   };
 
 function Footer(){
   return(
         <AppBar component="footer" style={style}>
-              <p>Email Us: <a className="email-link" href="mailto: info@avspllc.com">info@avspllc.com </a><br />
+              <p className="footer">Email Us: <a className="email-link" href="mailto: info@avspllc.com">info@avspllc.com </a><br />
               Phone Number: (510)445-4392</p>
         </AppBar>
   )

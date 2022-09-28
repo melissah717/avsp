@@ -1,5 +1,4 @@
 
-import { Typography } from '@mui/material'
 import * as React from 'react';
 import ImageList from '@mui/material/ImageList';
 import ImageListItem from '@mui/material/ImageListItem';
@@ -12,9 +11,9 @@ export default function Clients() {
             <h3>
                 We have been proud to work with some of these amazing companies in the past:
             </h3>
-            <ImageList variant="masonry" cols={4} gap={20}>
+            <ImageList variant="masonry" cols={3} gap={50}>
                 {clientData.map((item) => (
-                    <ImageListItem key={item.img} style={{ paddingTop: '30px' }}>
+                    <ImageListItem key={item.img} style={{ padding: '2rem', maxWidth: "100%"}}>
                         <img
                             src={`${item.img}?w=248&fit=crop&auto=format`}
                             srcSet={`${item.img}?w=248&fit=crop&auto=format&dpr=2 2x`}

@@ -5,7 +5,7 @@ import Background from "../images/background.jpeg"
 
 const sectionStyle = {
     container: {
-        minHeight: '70vh',
+        minHeight: '100vh',
         backgroundImage: `url(${Background})`,
         width: '100%',
         backgroundPosition: 'cover',
@@ -26,8 +26,8 @@ export default function About() {
                 maxWidth={false}
             >
                 <Paper sx={{
-                    width: '40vw',
-                    height: '40vh',
+                    width: '50vw',
+                    height: '50vh',
                     backgroundColor: 'black',
                     margin: '0 auto',
                     alignItems: 'center',

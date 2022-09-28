@@ -1,6 +1,9 @@
 html, body {
     background-color: #fbfbfb;
-    margin: 0
+    margin: 0;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
 }
 h1{
     font-family: 'Poppins', sans-serif;
@@ -33,7 +36,9 @@ p{
     p{
         font-size: 1.25vh
     }
-
+    p.footer{
+        font-size: 1.5vh
+    }
     h1{
         font-size: 25px;
     }
@@ -49,12 +54,6 @@ p{
     p{
         font-size: 18px
     }
-}
-
-.footer {
-    display: inline;
-    margin: 0 auto;
-    font-size: 2em;
 }
 
 a:link, a:visited,  a:active
