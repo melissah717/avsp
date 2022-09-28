@@ -1,21 +1,20 @@
 import * as React from 'react';
-import Paper from '@mui/material/Paper';
-import Container from '@mui/material/Container';
+import { Paper, Container} from "@mui/material"
 import { Typography } from '@mui/material';
 import Background from "../images/background.jpeg"
-
 
 const sectionStyle = {
     container: {
         minHeight: '70vh',
         backgroundImage: `url(${Background})`,
-        width: '100vw',
+        width: '100%',
         backgroundPosition: 'cover',
         backgroundSize: 'cover',
         backgroundPosition: 'center',
         display: 'flex',
         alignItems: 'center',
         justifyContent: 'center',
+        backgroundColor: 'black'
     }
 }
 export default function About() {
@@ -35,12 +34,9 @@ export default function About() {
                     display: 'flex',
                     position: 'static',
                     borderRadius: 5, 
-
-
                 }}>
                     <Typography sx={{
                         textAlign: 'center',
-                        fontSize: '1rem',
                         padding: '1em',
                         color: 'white'   
                     }}
