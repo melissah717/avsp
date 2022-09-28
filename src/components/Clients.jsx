@@ -7,7 +7,7 @@ import clientData from '../components/clientData'
 
 export default function Clients() {
     return (
-        <>
+        <body>
             <h3>
                 We have been proud to work with some of these amazing companies in the past:
             </h3>
@@ -23,6 +23,6 @@ export default function Clients() {
                     </ImageListItem>
                 ))}
             </ImageList>
-        </>
+        </body>
     );
 }
