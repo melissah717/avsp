@@ -45,11 +45,20 @@ p{
     h1{
         font-size: 20px;
     }
+    .service-pictures{
+        width: 500px;
+    }
+    .picture-card{
+        max-height: 
+    }
 }
 
 @media only screen and (min-width: 600px){
     p{
         font-size: 1.7vh
+    }
+    .service-pictures{
+        width: 100%
     }
 }
 
@@ -85,3 +94,4 @@ p.service-paragraph{
     width: 70%;
     margin: auto;
 }
+

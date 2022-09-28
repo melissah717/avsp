@@ -42,14 +42,14 @@ export default function Services(){
       </Grid>
 
       <Grid item xs={12} sm ={6}>
-        <Card style={pictureStyle}>
-          <img src="https://i.imgur.com/65523GZ.png" alt="design picture" style={{height: '100%', width: '100%', maxWidth: "100%", maxHeight: "100%"}}></img>
+        <Card style={pictureStyle} className="picture-card" elevation={0}>
+          <img src="https://i.imgur.com/65523GZ.png" alt="design picture" className="service-pictures"></img>
         </Card>
       </Grid>
 
       <Grid item xs={12} sm={6} order={{xs: 4, sm: 3, md: 3}}>
-      <Card style={pictureStyle}>
-          <img src="https://i.imgur.com/210e3hJ.jpeg" alt="support picture" style={{height: '100%', width: '100%', maxWidth: "100%", maxHeight: "100%"}}></img>
+      <Card style={pictureStyle} className="picture-card" elevation={0}>
+          <img src="https://i.imgur.com/210e3hJ.jpeg" alt="support picture" className="service-pictures"></img>
         </Card>
       </Grid>
 
@@ -72,9 +72,9 @@ export default function Services(){
       </Grid>
 
       <Grid item xs={12} sm = {6} order={{ xs: 6}}>
-      <Card style={pictureStyle}>
-          <img src="https://i.imgur.com/cODhsMa.jpeg" alt="installation picture" style={{height: '100%', width: '100%', maxWidth: "100%", maxHeight: "100%"}}></img>
-        </Card>
+      <Card style={pictureStyle} className="picture-card" elevation={0}>
+          <img src="https://i.imgur.com/cODhsMa.jpeg" alt="installation picture" className="service-pictures"></img>
+      </Card>
       </Grid>  
     </Grid>
     </Container>
