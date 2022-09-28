@@ -17,7 +17,9 @@ const pictureStyle = {
 const headerStyle={
   textAlign: 'center',
   marginTop: '6vh',
-  fontSize: '3.75vh'
+  fontSize: '4.5vh',
+  minWidth: '80%',
+  maxWidth: '100%'
 }
 
 
@@ -31,7 +33,7 @@ export default function Services(){
     <Grid container spacing={1}>
       <Grid item xs={12} sm={6}>
         <Card style={cardStyle}>
-          <h2 style={headerStyle}>Design <span className="deco">//</span><br/> Engineering</h2>
+          <h2 style={headerStyle}>Design <span className="deco">//</span> Engineering</h2>
           <p className="service-paragraph">
             We focus on creative solutions to craft your conference rooms and meeting spaces by putting the needs and budget of our clients first. 
             After figuring out the intial plan, we collaborate with you ensure your audio and visual solutions are a success. 
@@ -53,7 +55,7 @@ export default function Services(){
 
       <Grid item xs={12} sm = {6} order={{xs: 3, sm: 4, md: 4}}>
         <Card style={cardStyle}>
-          <h2 style={headerStyle}>Service <span className="deco">//</span><br/> Support</h2>
+          <h2 style={headerStyle}>Service <span className="deco">//</span> Troubleshoot</h2>
           <p className="service-paragraph">
           Technical failures can happen to even the most experienced users of technology. We strive to make your meeting spaces always available, while decreasing lost time due to technical issues. We offer aroundt the clock support to ensure our work, and your event, stays running as it should.
           </p>
